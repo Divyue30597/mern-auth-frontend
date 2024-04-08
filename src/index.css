@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  --primary-color: #5356ff;
+  --secondary-color: #a9a9a9;
+  --warning-color: #e8984a;
+  --warn-color: #f1d15f;
+  --danger-color: #f15c5c;
+  --success-color: #66de93;
+  --info-color: #867ae9;
+  --border-color: #000000;
+  --input-border-radius: 0.4rem;
+  --border-radius: 0.8rem;
+  --font-size: clamp(1.4rem, 1dvw + 0.1rem, 1.6rem);
+  --xs-font-size: clamp(1.2rem, 1dvw + 0.1rem, 1.4rem);
+  --icon-size: clamp(1.4rem, 1dvw + 0.1rem, 1.6rem);
+  --box-shadow: 0 0 0 0.4rem #e3e3e3;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+html,
+body {
+  max-width: 95dvw;
+  overflow-x: hidden;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_center {
+  align-items: center;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+hr {
+  margin-block: 1.2rem;
+}
+
+button {
+  padding: 1.2rem 0.8rem;
+  font-size: var(--font-size, 1.6rem);
+  font-weight: 700;
+  background-color: transparent;
+  border: solid 0.2rem var(--border-color);
+  border-radius: var(--border-radius);
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: background-color 350ms, color 350ms, box-shadow 350ms;
+}
+
+button:hover,
+button:active {
+  color: #fff;
+  background-color: #888787;
+}
+
+button:active {
+  box-shadow: var(--box-shadow);
+}
+
+.flexGrow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */ /*# sourceMappingURL=index.css.map */

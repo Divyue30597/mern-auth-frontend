@@ -1,0 +1,27 @@
+.select {
+  label {
+    display: block;
+    font-size: var(--font-size);
+    margin-bottom: 0.8rem;
+  }
+
+  .custom_select {
+    padding: 1.2rem 0.8rem;
+    border: 0.2rem solid var(--form_border-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+    transition: box-shadow 350ms, border 350ms;
+
+    &:focus {
+      box-shadow: var(--box-shadow);
+      border-color: #000;
+    }
+  }
+
+  & > p {
+    font-size: 1.4rem;
+    margin-block: 0.8rem;
+    font-weight: 600;
+    color: var(--info-color);
+  }
+}

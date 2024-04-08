@@ -1,0 +1,8 @@
+ul {
+  display: flex;
+  font-size: 1.8rem;
+  padding: 1.6rem 0;
+}
+ul > li {
+  list-style: none;
+}/*# sourceMappingURL=navbar.module.css.map */

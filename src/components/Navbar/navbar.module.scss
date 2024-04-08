@@ -1,0 +1,9 @@
+ul {
+  display: flex;
+  font-size: 1.8rem;
+  padding: 1.6rem 0;
+
+  & > li {
+    list-style: none;
+  }
+}
